@@ -9,6 +9,7 @@ maintainer:          Adam Vogt <vogt.adam@gmail.com>
 category:            Math
 build-type:          Simple
 cabal-version:       >=1.8
+tested-with:         GHC==7.8.2
 
 library
   exposed-modules:     Flann
@@ -17,7 +18,7 @@ library
   hs-source-dirs:      src
   include-dirs:        cbits
   c-sources:           cbits/flann_adapter.c
-  build-depends:       base ==4.6.*, vector ==0.10.*, repa ==3.2.*
+  build-depends:       base < 5, vector ==0.10.*, repa ==3.2.*
   build-tools:         c2hs
 
   pkgconfig-depends:   flann
