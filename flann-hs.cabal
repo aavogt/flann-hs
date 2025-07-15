@@ -2,6 +2,10 @@ name:                flann-hs
 version:             0.0.0.0
 synopsis:            preliminary binding to "a fast library for approximate nearest neighbours" (FLANN)
 description:         <http://people.cs.ubc.ca/~mariusm/index.php/FLANN/FLANN>
+                      .
+                      for debian:
+                      .
+                        apt get install libflann-dev libhdf5-dev
 license:             BSD3
 license-file:        LICENSE
 author:              Adam Vogt <vogt.adam@gmail.com>
@@ -12,7 +16,7 @@ cabal-version:       >=1.8
 tested-with:         GHC==7.8.2
 
 library
-  exposed-modules:     Flann
+  exposed-modules:     Flann, Flann.Simple
   other-modules:       C2HS
 
   hs-source-dirs:      src
