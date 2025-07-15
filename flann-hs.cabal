@@ -26,3 +26,10 @@ library
   build-tools:         c2hs
 
   pkgconfig-depends:   flann
+
+test-suite flann-hs-tests
+  type:                exitcode-stdio-1.0
+  main-is:             Main.hs
+  hs-source-dirs:      test
+  build-depends:       base < 5, flann-hs, massiv, hspec
+  default-language:    Haskell2010
